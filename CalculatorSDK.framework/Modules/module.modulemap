@@ -1,0 +1,10 @@
+framework module CalculatorSDK {
+  umbrella header "CalculatorSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module CalculatorSDK.Swift {
+    header "CalculatorSDK-Swift.h"
+}

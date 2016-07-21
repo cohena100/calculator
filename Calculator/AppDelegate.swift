@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CalculatorSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let commands = CalculatorCommands(calculatorProxy: CalculatorProxy())
+        let number = try! commands.numberChanged("4")
+        print("number: \(number)")
+        
         return true
     }
 
