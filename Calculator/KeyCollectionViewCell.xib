@@ -13,9 +13,24 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gv1-Wb-nqH">
+                        <rect key="frame" x="18" y="13" width="13" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Gv1-Wb-nqH" firstAttribute="centerY" secondItem="3tk-U4-gdp" secondAttribute="centerY" id="FMW-mG-p5T"/>
+                <constraint firstItem="Gv1-Wb-nqH" firstAttribute="centerX" secondItem="3tk-U4-gdp" secondAttribute="centerX" id="VwL-6l-4B0"/>
+            </constraints>
+            <connections>
+                <outlet property="symbolLabel" destination="Gv1-Wb-nqH" id="1qf-Ye-tfE"/>
+            </connections>
             <point key="canvasLocation" x="393" y="318"/>
         </collectionViewCell>
     </objects>

@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         let commands = CalculatorCommands(calculatorProxy: CalculatorProxy())
-        let number = try! commands.numberChanged("4")
+        let number = commands.keyAction(CalculatorCommands.Action.five)
         print("number: \(number)")
         
         return true

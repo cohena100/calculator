@@ -13,9 +13,24 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ord-av-pat">
+                        <rect key="frame" x="26" y="10" width="16" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ord-av-pat" firstAttribute="centerY" secondItem="5Ua-ec-l2t" secondAttribute="centerY" id="I1P-d4-Q4I"/>
+                <constraint firstAttribute="trailing" secondItem="ord-av-pat" secondAttribute="trailing" constant="8" id="Rhe-Cr-yXX"/>
+            </constraints>
+            <connections>
+                <outlet property="numberLabel" destination="ord-av-pat" id="jr6-xr-lnO"/>
+            </connections>
             <point key="canvasLocation" x="362" y="290"/>
         </collectionViewCell>
     </objects>

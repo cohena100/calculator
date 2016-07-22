@@ -10,4 +10,5 @@ import UIKit
 
 class DisplayCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var numberLabel: UILabel!
 }

@@ -10,4 +10,5 @@ import UIKit
 
 class KeyCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var symbolLabel: UILabel!
 }
