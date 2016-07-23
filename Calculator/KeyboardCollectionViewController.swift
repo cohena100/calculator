@@ -19,9 +19,14 @@ class KeyboardCollectionViewController: NSObject {
     var dataSourceLandscape: KeyboardKeyElements
     
     init(keyboardCollectionView: KeyboardCollectionView, view: UIView) {
-        let path = NSBundle.mainBundle().pathForResource("PortraitElements", ofType: "plist")!
-        let arr = NSArray(contentsOfFile: path) as! [AnyObject]
+        var path = NSBundle.mainBundle().pathForResource("PortraitElements", ofType: "plist")!
+        var arr = NSArray(contentsOfFile: path) as! [AnyObject]
         dataSourcePortrait = KeyboardKeyElements(arr: arr)
+        path = NSBundle.mainBundle().pathForResource("Themes", ofType: "plist")!
+        let dict = NSDictionary(contentsOfFile: path) as! [NSObject: AnyObject]
+        let theme = dict["theme"] as! String
+        path = NSBundle.mainBundle().pathForResource(theme, ofType: "plist")!
+        arr = NSArray(contentsOfFile: path) as! [AnyObject]
         dataSourceLandscape = KeyboardKeyElements(arr: arr)
         calculatorCommands = Model.sharedInstance.factory.getCalculatorCommands()
         self.keyboardCollectionView = keyboardCollectionView

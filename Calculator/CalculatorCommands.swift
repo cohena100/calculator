@@ -11,6 +11,7 @@ import Foundation
 public class CalculatorCommands {
     
     public enum Action: String {
+        case none = ""
         case plus = "+"
         case minus = "-"
         case multiply = "x"
@@ -48,6 +49,8 @@ public class CalculatorCommands {
  
     public func keyAction(action: Action) {
         switch action {
+        case .none:
+            return
         case .plus:
             display = toString(actionOnOperation({ $0 + $1 }))
             acOrC = Action.c

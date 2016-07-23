@@ -44,6 +44,14 @@
 		04C1C1EF1D43801E0029DA7C /* KeyboardKeyElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C1C1ED1D43801E0029DA7C /* KeyboardKeyElements.swift */; };
 		04C1C1F11D4380920029DA7C /* PortraitElements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1F01D4380920029DA7C /* PortraitElements.plist */; };
 		04C1C1F21D4380920029DA7C /* PortraitElements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1F01D4380920029DA7C /* PortraitElements.plist */; };
+		04C1C1F41D4390C30029DA7C /* LeftLandscape.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1F31D4390C30029DA7C /* LeftLandscape.plist */; };
+		04C1C1F51D4390C30029DA7C /* LeftLandscape.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1F31D4390C30029DA7C /* LeftLandscape.plist */; };
+		04C1C1F71D4392FB0029DA7C /* MiddleLandscape.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1F61D4392FB0029DA7C /* MiddleLandscape.plist */; };
+		04C1C1F81D4392FB0029DA7C /* MiddleLandscape.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1F61D4392FB0029DA7C /* MiddleLandscape.plist */; };
+		04C1C1FA1D4393090029DA7C /* RightLandscape.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1F91D4393090029DA7C /* RightLandscape.plist */; };
+		04C1C1FB1D4393090029DA7C /* RightLandscape.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1F91D4393090029DA7C /* RightLandscape.plist */; };
+		04C1C1FD1D43953F0029DA7C /* Themes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1FC1D43953F0029DA7C /* Themes.plist */; };
+		04C1C1FE1D43953F0029DA7C /* Themes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1FC1D43953F0029DA7C /* Themes.plist */; };
 		04C44F571D409C0600D32644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F561D409C0600D32644 /* AppDelegate.swift */; };
 		04C44F591D409C0600D32644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F581D409C0600D32644 /* ViewController.swift */; };
 		04C44F5C1D409C0600D32644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C44F5A1D409C0600D32644 /* Main.storyboard */; };
@@ -122,6 +130,10 @@
 		0483D3BC1D4364E2006DA600 /* CalculatorCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorCommands.swift; sourceTree = "<group>"; };
 		04C1C1ED1D43801E0029DA7C /* KeyboardKeyElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardKeyElements.swift; sourceTree = "<group>"; };
 		04C1C1F01D4380920029DA7C /* PortraitElements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PortraitElements.plist; sourceTree = "<group>"; };
+		04C1C1F31D4390C30029DA7C /* LeftLandscape.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LeftLandscape.plist; sourceTree = "<group>"; };
+		04C1C1F61D4392FB0029DA7C /* MiddleLandscape.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MiddleLandscape.plist; sourceTree = "<group>"; };
+		04C1C1F91D4393090029DA7C /* RightLandscape.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RightLandscape.plist; sourceTree = "<group>"; };
+		04C1C1FC1D43953F0029DA7C /* Themes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Themes.plist; sourceTree = "<group>"; };
 		04C44F531D409C0600D32644 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C44F561D409C0600D32644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C44F581D409C0600D32644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -258,6 +270,10 @@
 				04C44F5F1D409C0700D32644 /* LaunchScreen.storyboard */,
 				04C44F621D409C0700D32644 /* Info.plist */,
 				04C1C1F01D4380920029DA7C /* PortraitElements.plist */,
+				04C1C1F31D4390C30029DA7C /* LeftLandscape.plist */,
+				04C1C1F61D4392FB0029DA7C /* MiddleLandscape.plist */,
+				04C1C1F91D4393090029DA7C /* RightLandscape.plist */,
+				04C1C1FC1D43953F0029DA7C /* Themes.plist */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -409,10 +425,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0483D3C21D436621006DA600 /* KeyCollectionViewCell.xib in Resources */,
+				04C1C1F81D4392FB0029DA7C /* MiddleLandscape.plist in Resources */,
 				0483D3C01D43660F006DA600 /* SimpleView.xib in Resources */,
+				04C1C1FE1D43953F0029DA7C /* Themes.plist in Resources */,
 				0483D3C11D436618006DA600 /* DisplayCollectionViewCell.xib in Resources */,
 				0483D3C31D436624006DA600 /* KeyboardCollectionView.xib in Resources */,
 				04C1C1F21D4380920029DA7C /* PortraitElements.plist in Resources */,
+				04C1C1F51D4390C30029DA7C /* LeftLandscape.plist in Resources */,
+				04C1C1FB1D4393090029DA7C /* RightLandscape.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,14 +440,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C1C1FD1D43953F0029DA7C /* Themes.plist in Resources */,
 				0475AAA51D40E81600080EE8 /* DisplayCollectionViewCell.xib in Resources */,
 				04423EC91D40B2A50049C6F2 /* SimpleView.xib in Resources */,
 				04C44F611D409C0700D32644 /* LaunchScreen.storyboard in Resources */,
 				04C44F5E1D409C0700D32644 /* Assets.xcassets in Resources */,
 				04C44F5C1D409C0600D32644 /* Main.storyboard in Resources */,
+				04C1C1F41D4390C30029DA7C /* LeftLandscape.plist in Resources */,
+				04C1C1FA1D4393090029DA7C /* RightLandscape.plist in Resources */,
 				04C1C1F11D4380920029DA7C /* PortraitElements.plist in Resources */,
 				04423EC51D40ACBD0049C6F2 /* KeyCollectionViewCell.xib in Resources */,
 				04423E851D40A8270049C6F2 /* KeyboardCollectionView.xib in Resources */,
+				04C1C1F71D4392FB0029DA7C /* MiddleLandscape.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
