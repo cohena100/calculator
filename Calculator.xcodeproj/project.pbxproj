@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		040764001D43512600DFBD0F /* KeyboardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040763FF1D43512600DFBD0F /* KeyboardCollectionViewController.swift */; };
-		04423E821D40A0690049C6F2 /* CalculatorSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04C44F841D409C3000D32644 /* CalculatorSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04423E851D40A8270049C6F2 /* KeyboardCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04423E841D40A8270049C6F2 /* KeyboardCollectionView.xib */; };
 		04423E871D40A8A30049C6F2 /* KeyboardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04423E861D40A8A30049C6F2 /* KeyboardCollectionView.swift */; };
 		04423EC51D40ACBD0049C6F2 /* KeyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04423EC41D40ACBD0049C6F2 /* KeyCollectionViewCell.xib */; };
@@ -21,6 +20,26 @@
 		0456C9D51D4345E7009095A0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456C9CF1D43441B009095A0 /* Model.swift */; };
 		0475AAA51D40E81600080EE8 /* DisplayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0475AAA41D40E81600080EE8 /* DisplayCollectionViewCell.xib */; };
 		0475AAA71D40E85600080EE8 /* DisplayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475AAA61D40E85600080EE8 /* DisplayCollectionViewCell.swift */; };
+		0483D3A31D435F4D006DA600 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3A21D435F4D006DA600 /* KeyboardViewController.swift */; };
+		0483D3A81D435F4D006DA600 /* CalculatorKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0483D3A01D435F4D006DA600 /* CalculatorKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0483D3AD1D43609A006DA600 /* KeyboardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040763FF1D43512600DFBD0F /* KeyboardCollectionViewController.swift */; };
+		0483D3AE1D4361AA006DA600 /* KeyboardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04423E861D40A8A30049C6F2 /* KeyboardCollectionView.swift */; };
+		0483D3AF1D4361BF006DA600 /* KeyboardKeyElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456C9CD1D433B75009095A0 /* KeyboardKeyElement.swift */; };
+		0483D3B01D4361CA006DA600 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456C9CF1D43441B009095A0 /* Model.swift */; };
+		0483D3B11D4361D2006DA600 /* IModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456C9D11D434457009095A0 /* IModelFactory.swift */; };
+		0483D3B21D4361DB006DA600 /* DisplayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475AAA61D40E85600080EE8 /* DisplayCollectionViewCell.swift */; };
+		0483D3B31D4361E2006DA600 /* KeyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04423EC61D40ACEA0049C6F2 /* KeyCollectionViewCell.swift */; };
+		0483D3B81D4364DA006DA600 /* ICalculatorProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3B61D4364DA006DA600 /* ICalculatorProxy.swift */; };
+		0483D3B91D4364DA006DA600 /* ICalculatorProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3B61D4364DA006DA600 /* ICalculatorProxy.swift */; };
+		0483D3BA1D4364DA006DA600 /* CalculatorProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3B71D4364DA006DA600 /* CalculatorProxy.swift */; };
+		0483D3BB1D4364DA006DA600 /* CalculatorProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3B71D4364DA006DA600 /* CalculatorProxy.swift */; };
+		0483D3BD1D4364E2006DA600 /* CalculatorCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3BC1D4364E2006DA600 /* CalculatorCommands.swift */; };
+		0483D3BE1D4364E2006DA600 /* CalculatorCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3BC1D4364E2006DA600 /* CalculatorCommands.swift */; };
+		0483D3C01D43660F006DA600 /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04423EC81D40B2A50049C6F2 /* SimpleView.xib */; };
+		0483D3C11D436618006DA600 /* DisplayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0475AAA41D40E81600080EE8 /* DisplayCollectionViewCell.xib */; };
+		0483D3C21D436621006DA600 /* KeyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04423EC41D40ACBD0049C6F2 /* KeyCollectionViewCell.xib */; };
+		0483D3C31D436624006DA600 /* KeyboardCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04423E841D40A8270049C6F2 /* KeyboardCollectionView.xib */; };
+		0483D3C41D43678D006DA600 /* ModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456C9D31D4344A0009095A0 /* ModelFactory.swift */; };
 		04C44F571D409C0600D32644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F561D409C0600D32644 /* AppDelegate.swift */; };
 		04C44F591D409C0600D32644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F581D409C0600D32644 /* ViewController.swift */; };
 		04C44F5C1D409C0600D32644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C44F5A1D409C0600D32644 /* Main.storyboard */; };
@@ -28,10 +47,16 @@
 		04C44F611D409C0700D32644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C44F5F1D409C0700D32644 /* LaunchScreen.storyboard */; };
 		04C44F6C1D409C0700D32644 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F6B1D409C0700D32644 /* CalculatorTests.swift */; };
 		04C44F771D409C0700D32644 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F761D409C0700D32644 /* CalculatorUITests.swift */; };
-		04C44F851D409C3000D32644 /* CalculatorSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C44F841D409C3000D32644 /* CalculatorSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0483D3A51D435F4D006DA600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C44F4B1D409C0600D32644 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0483D39F1D435F4D006DA600;
+			remoteInfo = CalculatorKeyboard;
+		};
 		04C44F681D409C0700D32644 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04C44F4B1D409C0600D32644 /* Project object */;
@@ -55,9 +80,19 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04423E821D40A0690049C6F2 /* CalculatorSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0483D3A71D435F4D006DA600 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0483D3A81D435F4D006DA600 /* CalculatorKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -75,6 +110,12 @@
 		0456C9D31D4344A0009095A0 /* ModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFactory.swift; sourceTree = "<group>"; };
 		0475AAA41D40E81600080EE8 /* DisplayCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayCollectionViewCell.xib; sourceTree = "<group>"; };
 		0475AAA61D40E85600080EE8 /* DisplayCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCollectionViewCell.swift; sourceTree = "<group>"; };
+		0483D3A01D435F4D006DA600 /* CalculatorKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CalculatorKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0483D3A21D435F4D006DA600 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0483D3A41D435F4D006DA600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0483D3B61D4364DA006DA600 /* ICalculatorProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICalculatorProxy.swift; sourceTree = "<group>"; };
+		0483D3B71D4364DA006DA600 /* CalculatorProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorProxy.swift; sourceTree = "<group>"; };
+		0483D3BC1D4364E2006DA600 /* CalculatorCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorCommands.swift; sourceTree = "<group>"; };
 		04C44F531D409C0600D32644 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C44F561D409C0600D32644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C44F581D409C0600D32644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,15 +129,20 @@
 		04C44F721D409C0700D32644 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C44F761D409C0700D32644 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		04C44F781D409C0700D32644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04C44F841D409C3000D32644 /* CalculatorSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalculatorSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0483D39D1D435F4D006DA600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04C44F501D409C0600D32644 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C44F851D409C3000D32644 /* CalculatorSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,13 +163,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0483D3A11D435F4D006DA600 /* CalculatorKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0483D3A21D435F4D006DA600 /* KeyboardViewController.swift */,
+				0483D3A41D435F4D006DA600 /* Info.plist */,
+			);
+			path = CalculatorKeyboard;
+			sourceTree = "<group>";
+		};
+		0483D3B41D4364A8006DA600 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0483D3B61D4364DA006DA600 /* ICalculatorProxy.swift */,
+				0483D3B71D4364DA006DA600 /* CalculatorProxy.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0483D3B51D4364B1006DA600 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0483D3BC1D4364E2006DA600 /* CalculatorCommands.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0483D3BF1D43653C006DA600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C44F581D409C0600D32644 /* ViewController.swift */,
+				0456C9CF1D43441B009095A0 /* Model.swift */,
+				0456C9D11D434457009095A0 /* IModelFactory.swift */,
+				0456C9D31D4344A0009095A0 /* ModelFactory.swift */,
+				040763FF1D43512600DFBD0F /* KeyboardCollectionViewController.swift */,
+				0456C9CD1D433B75009095A0 /* KeyboardKeyElement.swift */,
+				04423E841D40A8270049C6F2 /* KeyboardCollectionView.xib */,
+				04423E861D40A8A30049C6F2 /* KeyboardCollectionView.swift */,
+				04423EC41D40ACBD0049C6F2 /* KeyCollectionViewCell.xib */,
+				04423EC61D40ACEA0049C6F2 /* KeyCollectionViewCell.swift */,
+				04423EC81D40B2A50049C6F2 /* SimpleView.xib */,
+				0475AAA41D40E81600080EE8 /* DisplayCollectionViewCell.xib */,
+				0475AAA61D40E85600080EE8 /* DisplayCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		04C44F4A1D409C0600D32644 = {
 			isa = PBXGroup;
 			children = (
-				04C44F841D409C3000D32644 /* CalculatorSDK.framework */,
 				04C44F551D409C0600D32644 /* Calculator */,
 				04C44F6A1D409C0700D32644 /* CalculatorTests */,
 				04C44F751D409C0700D32644 /* CalculatorUITests */,
+				0483D3A11D435F4D006DA600 /* CalculatorKeyboard */,
 				04C44F541D409C0600D32644 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +226,7 @@
 				04C44F531D409C0600D32644 /* Calculator.app */,
 				04C44F671D409C0700D32644 /* CalculatorTests.xctest */,
 				04C44F721D409C0700D32644 /* CalculatorUITests.xctest */,
+				0483D3A01D435F4D006DA600 /* CalculatorKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,24 +234,14 @@
 		04C44F551D409C0600D32644 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				0456C9CF1D43441B009095A0 /* Model.swift */,
-				0456C9D11D434457009095A0 /* IModelFactory.swift */,
-				0456C9D31D4344A0009095A0 /* ModelFactory.swift */,
+				0483D3B41D4364A8006DA600 /* Model */,
+				0483D3B51D4364B1006DA600 /* Controller */,
+				0483D3BF1D43653C006DA600 /* View */,
 				04C44F561D409C0600D32644 /* AppDelegate.swift */,
-				040763FF1D43512600DFBD0F /* KeyboardCollectionViewController.swift */,
-				04C44F581D409C0600D32644 /* ViewController.swift */,
 				04C44F5A1D409C0600D32644 /* Main.storyboard */,
 				04C44F5D1D409C0700D32644 /* Assets.xcassets */,
 				04C44F5F1D409C0700D32644 /* LaunchScreen.storyboard */,
 				04C44F621D409C0700D32644 /* Info.plist */,
-				04423E841D40A8270049C6F2 /* KeyboardCollectionView.xib */,
-				04423E861D40A8A30049C6F2 /* KeyboardCollectionView.swift */,
-				04423EC41D40ACBD0049C6F2 /* KeyCollectionViewCell.xib */,
-				04423EC61D40ACEA0049C6F2 /* KeyCollectionViewCell.swift */,
-				04423EC81D40B2A50049C6F2 /* SimpleView.xib */,
-				0475AAA41D40E81600080EE8 /* DisplayCollectionViewCell.xib */,
-				0475AAA61D40E85600080EE8 /* DisplayCollectionViewCell.swift */,
-				0456C9CD1D433B75009095A0 /* KeyboardKeyElement.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -184,6 +267,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0483D39F1D435F4D006DA600 /* CalculatorKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0483D3AB1D435F4D006DA600 /* Build configuration list for PBXNativeTarget "CalculatorKeyboard" */;
+			buildPhases = (
+				0483D39C1D435F4D006DA600 /* Sources */,
+				0483D39D1D435F4D006DA600 /* Frameworks */,
+				0483D39E1D435F4D006DA600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalculatorKeyboard;
+			productName = CalculatorKeyboard;
+			productReference = 0483D3A01D435F4D006DA600 /* CalculatorKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		04C44F521D409C0600D32644 /* Calculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C44F7B1D409C0700D32644 /* Build configuration list for PBXNativeTarget "Calculator" */;
@@ -192,10 +292,12 @@
 				04C44F501D409C0600D32644 /* Frameworks */,
 				04C44F511D409C0600D32644 /* Resources */,
 				04423E831D40A0690049C6F2 /* Embed Frameworks */,
+				0483D3A71D435F4D006DA600 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0483D3A61D435F4D006DA600 /* PBXTargetDependency */,
 			);
 			name = Calculator;
 			productName = Calculator;
@@ -248,6 +350,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Avi Cohen";
 				TargetAttributes = {
+					0483D39F1D435F4D006DA600 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					04C44F521D409C0600D32644 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -277,11 +382,23 @@
 				04C44F521D409C0600D32644 /* Calculator */,
 				04C44F661D409C0700D32644 /* CalculatorTests */,
 				04C44F711D409C0700D32644 /* CalculatorUITests */,
+				0483D39F1D435F4D006DA600 /* CalculatorKeyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0483D39E1D435F4D006DA600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0483D3C21D436621006DA600 /* KeyCollectionViewCell.xib in Resources */,
+				0483D3C01D43660F006DA600 /* SimpleView.xib in Resources */,
+				0483D3C11D436618006DA600 /* DisplayCollectionViewCell.xib in Resources */,
+				0483D3C31D436624006DA600 /* KeyboardCollectionView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04C44F511D409C0600D32644 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,16 +430,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0483D39C1D435F4D006DA600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0483D3B01D4361CA006DA600 /* Model.swift in Sources */,
+				0483D3AE1D4361AA006DA600 /* KeyboardCollectionView.swift in Sources */,
+				0483D3C41D43678D006DA600 /* ModelFactory.swift in Sources */,
+				0483D3A31D435F4D006DA600 /* KeyboardViewController.swift in Sources */,
+				0483D3B91D4364DA006DA600 /* ICalculatorProxy.swift in Sources */,
+				0483D3B21D4361DB006DA600 /* DisplayCollectionViewCell.swift in Sources */,
+				0483D3AD1D43609A006DA600 /* KeyboardCollectionViewController.swift in Sources */,
+				0483D3BE1D4364E2006DA600 /* CalculatorCommands.swift in Sources */,
+				0483D3BB1D4364DA006DA600 /* CalculatorProxy.swift in Sources */,
+				0483D3B11D4361D2006DA600 /* IModelFactory.swift in Sources */,
+				0483D3B31D4361E2006DA600 /* KeyCollectionViewCell.swift in Sources */,
+				0483D3AF1D4361BF006DA600 /* KeyboardKeyElement.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04C44F4F1D409C0600D32644 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0483D3BA1D4364DA006DA600 /* CalculatorProxy.swift in Sources */,
 				0456C9D21D434457009095A0 /* IModelFactory.swift in Sources */,
+				0483D3B81D4364DA006DA600 /* ICalculatorProxy.swift in Sources */,
 				040764001D43512600DFBD0F /* KeyboardCollectionViewController.swift in Sources */,
 				0456C9D01D43441B009095A0 /* Model.swift in Sources */,
 				0475AAA71D40E85600080EE8 /* DisplayCollectionViewCell.swift in Sources */,
 				04423E871D40A8A30049C6F2 /* KeyboardCollectionView.swift in Sources */,
 				04C44F591D409C0600D32644 /* ViewController.swift in Sources */,
+				0483D3BD1D4364E2006DA600 /* CalculatorCommands.swift in Sources */,
 				0456C9D41D4344A0009095A0 /* ModelFactory.swift in Sources */,
 				0456C9CE1D433B75009095A0 /* KeyboardKeyElement.swift in Sources */,
 				04423EC71D40ACEA0049C6F2 /* KeyCollectionViewCell.swift in Sources */,
@@ -350,6 +489,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0483D3A61D435F4D006DA600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0483D39F1D435F4D006DA600 /* CalculatorKeyboard */;
+			targetProxy = 0483D3A51D435F4D006DA600 /* PBXContainerItemProxy */;
+		};
 		04C44F691D409C0700D32644 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 04C44F521D409C0600D32644 /* Calculator */;
@@ -382,6 +526,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0483D3A91D435F4D006DA600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CalculatorKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.home.Calculator.CalculatorKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0483D3AA1D435F4D006DA600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CalculatorKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.home.Calculator.CalculatorKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		04C44F791D409C0700D32644 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -490,6 +667,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -550,6 +728,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0483D3AB1D435F4D006DA600 /* Build configuration list for PBXNativeTarget "CalculatorKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0483D3A91D435F4D006DA600 /* Debug */,
+				0483D3AA1D435F4D006DA600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		04C44F4E1D409C0600D32644 /* Build configuration list for PBXProject "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

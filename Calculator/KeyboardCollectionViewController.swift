@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CalculatorSDK
 
 class KeyboardCollectionViewController: NSObject {
     

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CalculatorSDK
 
 class ModelFactory: IModelFactory {
     

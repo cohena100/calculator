@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CalculatorSDK
 
 struct KeyboardKeyElement {
     
