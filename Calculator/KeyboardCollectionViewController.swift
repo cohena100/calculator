@@ -39,6 +39,10 @@ class KeyboardCollectionViewController: NSObject {
         self.keyboardCollectionView.dataSource = self
     }
     
+    func willRotate() {
+        self.keyboardCollectionView.collectionViewLayout.invalidateLayout()
+    }
+    
     func didRotate(isLandscape: Bool) {
         self.isLandscape = isLandscape
         self.keyboardCollectionView.reloadData()

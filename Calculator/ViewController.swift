@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         keyboardCollectionViewController = KeyboardCollectionViewController(keyboardCollectionView: keyboardCollectionView, view: view)
     }
     
+    override func willTransitionToTraitCollection(newCollection: UITraitCollection, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        keyboardCollectionViewController.willRotate()
+    }
+    
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         guard let keyboardCollectionViewController = keyboardCollectionViewController else {
