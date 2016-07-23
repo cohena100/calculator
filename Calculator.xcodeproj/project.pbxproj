@@ -13,6 +13,10 @@
 		04423EC51D40ACBD0049C6F2 /* KeyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04423EC41D40ACBD0049C6F2 /* KeyCollectionViewCell.xib */; };
 		04423EC71D40ACEA0049C6F2 /* KeyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04423EC61D40ACEA0049C6F2 /* KeyCollectionViewCell.swift */; };
 		04423EC91D40B2A50049C6F2 /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04423EC81D40B2A50049C6F2 /* SimpleView.xib */; };
+		044B9DC21D4397A3009834BB /* IModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456C9D11D434457009095A0 /* IModelFactory.swift */; };
+		044B9DC31D4397B3009834BB /* CalculatorCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3BC1D4364E2006DA600 /* CalculatorCommands.swift */; };
+		044B9DC41D4397BA009834BB /* ICalculatorProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3B61D4364DA006DA600 /* ICalculatorProxy.swift */; };
+		044B9DC51D4397C6009834BB /* CalculatorProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483D3B71D4364DA006DA600 /* CalculatorProxy.swift */; };
 		0456C9CE1D433B75009095A0 /* KeyboardKeyElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456C9CD1D433B75009095A0 /* KeyboardKeyElement.swift */; };
 		0456C9D01D43441B009095A0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456C9CF1D43441B009095A0 /* Model.swift */; };
 		0456C9D21D434457009095A0 /* IModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456C9D11D434457009095A0 /* IModelFactory.swift */; };
@@ -517,8 +521,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044B9DC51D4397C6009834BB /* CalculatorProxy.swift in Sources */,
 				04C44F6C1D409C0700D32644 /* CalculatorTests.swift in Sources */,
+				044B9DC41D4397BA009834BB /* ICalculatorProxy.swift in Sources */,
+				044B9DC21D4397A3009834BB /* IModelFactory.swift in Sources */,
 				0456C9D51D4345E7009095A0 /* Model.swift in Sources */,
+				044B9DC31D4397B3009834BB /* CalculatorCommands.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
