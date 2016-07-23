@@ -23,7 +23,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="ord-av-pat" firstAttribute="centerY" secondItem="5Ua-ec-l2t" secondAttribute="centerY" id="I1P-d4-Q4I"/>
                 <constraint firstAttribute="trailing" secondItem="ord-av-pat" secondAttribute="trailing" constant="8" id="Rhe-Cr-yXX"/>

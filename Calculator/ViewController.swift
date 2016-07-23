@@ -12,6 +12,14 @@ class ViewController: UIViewController {
     
     var keyboardCollectionViewController: KeyboardCollectionViewController!
     
+    override func loadView() {
+        let nib = UINib(nibName: "KeyboardCollectionView", bundle: nil)
+        let objects = nib.instantiateWithOwner(self, options: nil)
+        let keyboardCollectionView = objects[0] as! KeyboardCollectionView
+        view = keyboardCollectionView
+        keyboardCollectionViewController = KeyboardCollectionViewController(keyboardCollectionView: keyboardCollectionView, view: view)
+    }
+    
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         guard let keyboardCollectionViewController = keyboardCollectionViewController else {
