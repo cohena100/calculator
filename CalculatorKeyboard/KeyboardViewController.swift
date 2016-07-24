@@ -13,23 +13,36 @@ class KeyboardViewController: UIInputViewController {
     var keyboardCollectionViewController: KeyboardCollectionViewController!
     var heightConstraint: NSLayoutConstraint!
 
-    override func updateViewConstraints() {
-        super.updateViewConstraints()
-        if heightConstraint == nil {
-            return
-        }
-        let screenFrame = UIScreen.mainScreen().bounds
-        let isLandscape = screenFrame.width > screenFrame.height
-        let height = isLandscape ? 0.55 * screenFrame.height : 0.6 * screenFrame.height
-        heightConstraint.constant = height
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    override func willTransitionToTraitCollection(newCollection: UITraitCollection, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+    
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+        heightConstraint.constant = calculateViewHeight()
         keyboardCollectionViewController.willRotate()
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        Model.sharedInstance.factory = ModelFactory()
+        let nib = UINib(nibName: "KeyboardCollectionView", bundle: nil)
+        let objects = nib.instantiateWithOwner(self, options: nil)
+        let keyboardCollectionView = objects[0] as! KeyboardCollectionView
+        keyboardCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        keyboardCollectionViewController = KeyboardCollectionViewController(keyboardCollectionView: keyboardCollectionView)
+        view.addSubview(keyboardCollectionView)
+        var c = NSLayoutConstraint(item: keyboardCollectionView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1.0, constant: 0)
+        view.addConstraint(c)
+        c = NSLayoutConstraint(item: keyboardCollectionView, attribute: .Left, relatedBy: .Equal, toItem: view, attribute: .Left, multiplier: 1.0, constant: 0)
+        view.addConstraint(c)
+        c = NSLayoutConstraint(item: keyboardCollectionView, attribute: .Right, relatedBy: .Equal, toItem: view, attribute: .Right, multiplier: 1.0, constant: 0)
+        view.addConstraint(c)
+        c = NSLayoutConstraint(item: keyboardCollectionView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0)
+        view.addConstraint(c)
+        let height = calculateViewHeight()
+        heightConstraint = NSLayoutConstraint(item: view, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: height)
+        view.addConstraint(heightConstraint)
     }
     
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
@@ -41,27 +54,10 @@ class KeyboardViewController: UIInputViewController {
         keyboardCollectionViewController.didRotate(screenFrame.width > screenFrame.height)
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        if heightConstraint == nil {
-            let screenFrame = UIScreen.mainScreen().bounds
-            let isLandscape = screenFrame.width > screenFrame.height
-            let height = isLandscape ? 0.55 * screenFrame.height : 0.6 * screenFrame.height
-            heightConstraint = NSLayoutConstraint(item: view, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 0.0, constant: height)
-            heightConstraint.priority = UILayoutPriorityRequired - 1
-            heightConstraint.active = true
-            view.addConstraint(heightConstraint)
-        }
-    }
-    
-    override func loadView() {
-        super.loadView()
-        Model.sharedInstance.factory = ModelFactory()
-        let nib = UINib(nibName: "KeyboardCollectionView", bundle: nil)
-        let objects = nib.instantiateWithOwner(self, options: nil)
-        let keyboardCollectionView = objects[0] as! KeyboardCollectionView
-        view = keyboardCollectionView
-        keyboardCollectionViewController = KeyboardCollectionViewController(keyboardCollectionView: keyboardCollectionView, view: view)
+    private func calculateViewHeight() -> CGFloat {
+        let screenFrame = UIScreen.mainScreen().bounds
+        let isLandscape = screenFrame.width > screenFrame.height
+        return isLandscape ? 0.55 * screenFrame.height : 0.6 * screenFrame.height
     }
     
 }

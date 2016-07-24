@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         let objects = nib.instantiateWithOwner(self, options: nil)
         let keyboardCollectionView = objects[0] as! KeyboardCollectionView
         view = keyboardCollectionView
-        keyboardCollectionViewController = KeyboardCollectionViewController(keyboardCollectionView: keyboardCollectionView, view: view)
+        keyboardCollectionViewController = KeyboardCollectionViewController(keyboardCollectionView: keyboardCollectionView)
     }
     
     override func willTransitionToTraitCollection(newCollection: UITraitCollection, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {

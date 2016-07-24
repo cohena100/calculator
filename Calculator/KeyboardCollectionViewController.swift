@@ -11,14 +11,12 @@ import UIKit
 class KeyboardCollectionViewController: NSObject {
     
     weak var keyboardCollectionView: KeyboardCollectionView!
-    weak var view: UIView!
     let mediator = KeyboardCollectionViewMediator()
     
-    init(keyboardCollectionView: KeyboardCollectionView, view: UIView) {
+    init(keyboardCollectionView: KeyboardCollectionView) {
         self.keyboardCollectionView = keyboardCollectionView
         self.keyboardCollectionView.registerNib(UINib(nibName: "KeyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "key")
         self.keyboardCollectionView.registerNib(UINib(nibName: "DisplayCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "display")
-        self.view = view
         super.init()
         self.keyboardCollectionView.delegate = self
         self.keyboardCollectionView.dataSource = self
@@ -38,7 +36,7 @@ class KeyboardCollectionViewController: NSObject {
 extension KeyboardCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return mediator.sizeForItemAtIndexPath(indexPath, viewFrame: view.frame)
+        return mediator.sizeForItemAtIndexPath(indexPath, viewFrame: keyboardCollectionView.frame)
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
