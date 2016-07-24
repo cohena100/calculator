@@ -97,7 +97,8 @@ class CalculatorTests: XCTestCase {
         commands.keyAction(.five)
         commands.keyAction(.plus)
         commands.keyAction(.five)
-        XCTAssert(commands.display == CalculatorTests.zero)
+        commands.keyAction(.equals)
+        XCTAssert(commands.display == CalculatorTests.ten)
     }
     
     func test_5Plus5EqualsPlus5Equals_15() {
@@ -107,6 +108,7 @@ class CalculatorTests: XCTestCase {
         commands.keyAction(.equals)
         commands.keyAction(.plus)
         commands.keyAction(.five)
+        commands.keyAction(.equals)
         XCTAssert(commands.display == CalculatorTests.fifteen)
     }
     

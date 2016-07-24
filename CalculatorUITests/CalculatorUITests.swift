@@ -29,8 +29,18 @@ class CalculatorUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let collectionViewsQuery = XCUIApplication().collectionViews
+        collectionViewsQuery.staticTexts["8"].tap()
+        collectionViewsQuery.staticTexts["+"].tap()
+        collectionViewsQuery.childrenMatchingType(.Cell).elementBoundByIndex(8).otherElements.containingType(.StaticText, identifier:"8").element.tap()
+        
+        let cellsQuery = collectionViewsQuery.cells
+        cellsQuery.otherElements.containingType(.StaticText, identifier:"-").element.tap()
+        cellsQuery.otherElements.containingType(.StaticText, identifier:"6").element.tap()
+        cellsQuery.otherElements.containingType(.StaticText, identifier:"=").element.tap()
+        cellsQuery.otherElements.containingType(.StaticText, identifier:"10").element.tap()
+        
     }
     
 }
