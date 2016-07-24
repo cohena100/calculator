@@ -35,6 +35,18 @@ class KeyboardCollectionViewController: NSObject {
         self.isLandscape = false
         self.view = view
         super.init()
+        for i in 0 ..< dataSourcePortrait.elements.count {
+            if dataSourcePortrait.elements[i].action == CalculatorCommands.Action.c || dataSourcePortrait.elements[i].action == CalculatorCommands.Action.ac {
+                acOrCIndex = (landscape: 0, portrait: i)
+                break
+            }
+        }
+        for i in 0 ..< dataSourceLandscape.elements.count {
+            if dataSourceLandscape.elements[i].action == CalculatorCommands.Action.c || dataSourceLandscape.elements[i].action == CalculatorCommands.Action.ac {
+                acOrCIndex = (landscape: i, portrait: acOrCIndex.portrait)
+                break
+            }
+        }
         self.keyboardCollectionView.delegate = self
         self.keyboardCollectionView.dataSource = self
     }
@@ -118,21 +130,6 @@ extension KeyboardCollectionViewController: UICollectionViewDataSource {
             let element = isLandscape ? dataSourceLandscape.elements[indexPath.row] : dataSourcePortrait.elements[indexPath.row]
             cell.backgroundColor = element.color
             cell.symbolLabel.text = element.action?.rawValue
-            if let acOrCAction = element.action where acOrCAction == CalculatorCommands.Action.c || acOrCAction == CalculatorCommands.Action.ac {
-                if isLandscape {
-                    if acOrCIndex == nil {
-                        acOrCIndex = (landscape: indexPath.row, portrait: 0)
-                    } else {
-                        acOrCIndex = (landscape: indexPath.row, portrait: acOrCIndex.portrait)
-                    }
-                } else {
-                    if acOrCIndex == nil {
-                        acOrCIndex = (landscape: 0, portrait: indexPath.row)
-                    } else {
-                        acOrCIndex = (landscape: acOrCIndex.landscape, portrait: indexPath.row)
-                    }
-                }
-            }
             return cell
         }
     }
