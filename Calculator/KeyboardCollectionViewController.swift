@@ -14,7 +14,7 @@ class KeyboardCollectionViewController: NSObject {
     let keyboardCollectionView: KeyboardCollectionView
     var isLandscape: Bool
     weak var view: UIView!
-    var acOrCIndex: Int!
+    var acOrCIndex: (portrait: Int, landscape: Int)!
     var dataSourcePortrait: KeyboardKeyElements
     var dataSourceLandscape: KeyboardKeyElements
     
@@ -87,9 +87,10 @@ extension KeyboardCollectionViewController: UICollectionViewDelegateFlowLayout {
                 return
             }
             calculatorCommands.keyAction(action)
-            dataSourcePortrait.elements[acOrCIndex] = KeyboardKeyElement(action: calculatorCommands.acOrC, color: dataSourcePortrait.elements[acOrCIndex].color)
-            dataSourceLandscape.elements[acOrCIndex] = KeyboardKeyElement(action: calculatorCommands.acOrC, color: dataSourceLandscape.elements[acOrCIndex].color)
-            keyboardCollectionView.reloadItemsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0), NSIndexPath(forRow: acOrCIndex, inSection: 1)])
+            dataSourcePortrait.elements[acOrCIndex.portrait] = KeyboardKeyElement(action: calculatorCommands.acOrC, color: dataSourcePortrait.elements[acOrCIndex.portrait].color)
+            dataSourceLandscape.elements[acOrCIndex.landscape] = KeyboardKeyElement(action: calculatorCommands.acOrC, color: dataSourceLandscape.elements[acOrCIndex.landscape].color)
+            let itemsToReload = isLandscape ? [NSIndexPath(forRow: 0, inSection: 0), NSIndexPath(forRow: acOrCIndex.landscape, inSection: 1)] : [NSIndexPath(forRow: 0, inSection: 0), NSIndexPath(forRow: acOrCIndex.portrait, inSection: 1)]
+            keyboardCollectionView.reloadItemsAtIndexPaths(itemsToReload)
         }
     }
     
@@ -118,7 +119,19 @@ extension KeyboardCollectionViewController: UICollectionViewDataSource {
             cell.backgroundColor = element.color
             cell.symbolLabel.text = element.action?.rawValue
             if let acOrCAction = element.action where acOrCAction == CalculatorCommands.Action.c || acOrCAction == CalculatorCommands.Action.ac {
-                acOrCIndex = indexPath.row
+                if isLandscape {
+                    if acOrCIndex == nil {
+                        acOrCIndex = (landscape: indexPath.row, portrait: 0)
+                    } else {
+                        acOrCIndex = (landscape: indexPath.row, portrait: acOrCIndex.portrait)
+                    }
+                } else {
+                    if acOrCIndex == nil {
+                        acOrCIndex = (landscape: 0, portrait: indexPath.row)
+                    } else {
+                        acOrCIndex = (landscape: acOrCIndex.landscape, portrait: indexPath.row)
+                    }
+                }
             }
             return cell
         }
