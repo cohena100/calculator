@@ -43,7 +43,7 @@ class CalculatorTests: XCTestCase {
         super.tearDown()
     }
     
-    func test5Plus5equals10() {
+    func test_5Plus5equals_10() {
         commands.keyAction(.five)
         XCTAssert(commands.display == CalculatorTests.five)
         commands.keyAction(.plus)
@@ -54,7 +54,7 @@ class CalculatorTests: XCTestCase {
         XCTAssert(commands.display == CalculatorTests.seven)
     }
     
-    func test5Plus5Plus5Equals15() {
+    func test_5Plus5Plus5Equals_15() {
         commands.keyAction(.five)
         commands.keyAction(.plus)
         commands.keyAction(.five)
@@ -64,7 +64,7 @@ class CalculatorTests: XCTestCase {
         XCTAssert(commands.display == CalculatorTests.fifteen)
     }
     
-    func test5Point5Plus5Equals10Point5() {
+    func test_5Point5Plus5Equals10Point5() {
         commands.keyAction(.five)
         commands.keyAction(.point)
         commands.keyAction(.five)
@@ -74,7 +74,7 @@ class CalculatorTests: XCTestCase {
         XCTAssert(commands.display == CalculatorTests.tenPoint5)
     }
     
-    func testMinus5Plus5Equals0() {
+    func test_Minus5Plus5Equals_0() {
         commands.keyAction(.five)
         commands.keyAction(.plusMinus)
         commands.keyAction(.plus)
@@ -83,10 +83,31 @@ class CalculatorTests: XCTestCase {
         XCTAssert(commands.display == CalculatorTests.zero)
     }
     
-    func test5Point() {
+    func test_5Point_5Point() {
         commands.keyAction(.five)
         commands.keyAction(.point)
         XCTAssert(commands.display == CalculatorTests.fivePoint)
+    }
+    
+    func test_5Plus5Equals5Plus5Equals_10() {
+        commands.keyAction(.five)
+        commands.keyAction(.plus)
+        commands.keyAction(.five)
+        commands.keyAction(.equals)
+        commands.keyAction(.five)
+        commands.keyAction(.plus)
+        commands.keyAction(.five)
+        XCTAssert(commands.display == CalculatorTests.zero)
+    }
+    
+    func test_5Plus5EqualsPlus5Equals_15() {
+        commands.keyAction(.five)
+        commands.keyAction(.plus)
+        commands.keyAction(.five)
+        commands.keyAction(.equals)
+        commands.keyAction(.plus)
+        commands.keyAction(.five)
+        XCTAssert(commands.display == CalculatorTests.fifteen)
     }
     
 }

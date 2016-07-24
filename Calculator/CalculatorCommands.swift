@@ -42,6 +42,7 @@ public class CalculatorCommands {
     var operation: Operation?
     var rightNumber: Double?
     var pointActionDone = false
+    var lastActionWasEquals = false
     
     public init(calculatorProxy: ICalculatorProxy) {
         self.calculatorProxy = calculatorProxy
@@ -123,7 +124,12 @@ public class CalculatorCommands {
             rightNumber = number
             return rightNumber!
         }
-        leftNumber = newValFrom(leftNumber, with: number)
+        if lastActionWasEquals {
+            leftNumber = number
+            lastActionWasEquals = false
+        } else {
+            leftNumber = newValFrom(leftNumber, with: number)
+        }
         return leftNumber
     }
     
@@ -150,6 +156,7 @@ public class CalculatorCommands {
         } else {
             leftNumber = 0
         }
+        lastActionWasEquals = false
         return leftNumber
     }
     
@@ -158,6 +165,7 @@ public class CalculatorCommands {
         leftNumber = 0
         operation = nil
         rightNumber = nil
+        lastActionWasEquals = false
         return calculatorProxy.allClear()
     }
     
@@ -201,6 +209,7 @@ public class CalculatorCommands {
         leftNumber = result
         self.operation = nil
         self.rightNumber = nil
+        lastActionWasEquals = true
         return leftNumber
     }
     
