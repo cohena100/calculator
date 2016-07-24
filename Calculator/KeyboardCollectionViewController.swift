@@ -10,7 +10,7 @@ import UIKit
 
 class KeyboardCollectionViewController: NSObject {
     
-    let keyboardCollectionView: KeyboardCollectionView
+    weak var keyboardCollectionView: KeyboardCollectionView!
     weak var view: UIView!
     let mediator = KeyboardCollectionViewMediator()
     
