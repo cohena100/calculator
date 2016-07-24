@@ -56,6 +56,8 @@
 		04C1C1FB1D4393090029DA7C /* RightLandscape.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1F91D4393090029DA7C /* RightLandscape.plist */; };
 		04C1C1FD1D43953F0029DA7C /* Themes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1FC1D43953F0029DA7C /* Themes.plist */; };
 		04C1C1FE1D43953F0029DA7C /* Themes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C1C1FC1D43953F0029DA7C /* Themes.plist */; };
+		04C27BE81D44B62600965E8D /* KeyboardCollectionViewMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C27BE71D44B62600965E8D /* KeyboardCollectionViewMediator.swift */; };
+		04C27BE91D44B62600965E8D /* KeyboardCollectionViewMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C27BE71D44B62600965E8D /* KeyboardCollectionViewMediator.swift */; };
 		04C44F571D409C0600D32644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F561D409C0600D32644 /* AppDelegate.swift */; };
 		04C44F591D409C0600D32644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C44F581D409C0600D32644 /* ViewController.swift */; };
 		04C44F5C1D409C0600D32644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C44F5A1D409C0600D32644 /* Main.storyboard */; };
@@ -138,6 +140,7 @@
 		04C1C1F61D4392FB0029DA7C /* MiddleLandscape.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MiddleLandscape.plist; sourceTree = "<group>"; };
 		04C1C1F91D4393090029DA7C /* RightLandscape.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RightLandscape.plist; sourceTree = "<group>"; };
 		04C1C1FC1D43953F0029DA7C /* Themes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Themes.plist; sourceTree = "<group>"; };
+		04C27BE71D44B62600965E8D /* KeyboardCollectionViewMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardCollectionViewMediator.swift; sourceTree = "<group>"; };
 		04C44F531D409C0600D32644 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C44F561D409C0600D32644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C44F581D409C0600D32644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -216,17 +219,18 @@
 			children = (
 				04C1C1EC1D437FE90029DA7C /* Elements */,
 				04C44F581D409C0600D32644 /* ViewController.swift */,
-				0456C9CF1D43441B009095A0 /* Model.swift */,
-				0456C9D11D434457009095A0 /* IModelFactory.swift */,
-				0456C9D31D4344A0009095A0 /* ModelFactory.swift */,
+				04C27BE71D44B62600965E8D /* KeyboardCollectionViewMediator.swift */,
 				040763FF1D43512600DFBD0F /* KeyboardCollectionViewController.swift */,
 				04423E841D40A8270049C6F2 /* KeyboardCollectionView.xib */,
 				04423E861D40A8A30049C6F2 /* KeyboardCollectionView.swift */,
 				04423EC41D40ACBD0049C6F2 /* KeyCollectionViewCell.xib */,
 				04423EC61D40ACEA0049C6F2 /* KeyCollectionViewCell.swift */,
-				04423EC81D40B2A50049C6F2 /* SimpleView.xib */,
 				0475AAA41D40E81600080EE8 /* DisplayCollectionViewCell.xib */,
 				0475AAA61D40E85600080EE8 /* DisplayCollectionViewCell.swift */,
+				0456C9CF1D43441B009095A0 /* Model.swift */,
+				0456C9D11D434457009095A0 /* IModelFactory.swift */,
+				0456C9D31D4344A0009095A0 /* ModelFactory.swift */,
+				04423EC81D40B2A50049C6F2 /* SimpleView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -484,6 +488,7 @@
 				0483D3AE1D4361AA006DA600 /* KeyboardCollectionView.swift in Sources */,
 				0483D3C41D43678D006DA600 /* ModelFactory.swift in Sources */,
 				0483D3A31D435F4D006DA600 /* KeyboardViewController.swift in Sources */,
+				04C27BE91D44B62600965E8D /* KeyboardCollectionViewMediator.swift in Sources */,
 				0483D3B91D4364DA006DA600 /* ICalculatorProxy.swift in Sources */,
 				0483D3B21D4361DB006DA600 /* DisplayCollectionViewCell.swift in Sources */,
 				0483D3AD1D43609A006DA600 /* KeyboardCollectionViewController.swift in Sources */,
@@ -514,6 +519,7 @@
 				0456C9CE1D433B75009095A0 /* KeyboardKeyElement.swift in Sources */,
 				04423EC71D40ACEA0049C6F2 /* KeyCollectionViewCell.swift in Sources */,
 				04C44F571D409C0600D32644 /* AppDelegate.swift in Sources */,
+				04C27BE81D44B62600965E8D /* KeyboardCollectionViewMediator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
