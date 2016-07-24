@@ -117,7 +117,7 @@ extension KeyboardCollectionViewController: UICollectionViewDataSource {
             let element = isLandscape ? dataSourceLandscape.elements[indexPath.row] : dataSourcePortrait.elements[indexPath.row]
             cell.backgroundColor = element.color
             cell.symbolLabel.text = element.action?.rawValue
-            if let acOrCAction = element.action where acOrCAction == CalculatorCommands.Action.c {
+            if let acOrCAction = element.action where acOrCAction == CalculatorCommands.Action.c || acOrCAction == CalculatorCommands.Action.ac {
                 acOrCIndex = indexPath.row
             }
             return cell
