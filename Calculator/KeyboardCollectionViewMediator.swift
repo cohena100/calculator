@@ -22,6 +22,8 @@ class KeyboardCollectionViewMediator {
     var isLandscape = false
     
     init() {
+        let screenFrame = UIScreen.mainScreen().bounds
+        isLandscape = screenFrame.width > screenFrame.height
         var path = NSBundle.mainBundle().pathForResource("PortraitElements", ofType: "plist")!
         var arr = NSArray(contentsOfFile: path) as! [AnyObject]
         dataSourcePortrait = KeyboardKeyElements(arr: arr)
